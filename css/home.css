@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+.image-container {
+    background-image: url('../images/featurePraga.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+.image-appear {
+    -webkit-animation: appear 2s linear forwards;
+            animation: appear 2s linear forwards;
+}
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.image-disappear {
+    -webkit-animation: disappear 2s linear forwards;
+            animation: disappear 2s linear forwards;
+}
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+.banner-title {
+    font-size: 3rem;
+    width: 90%;
+    margin: auto;
+    color: #EFF9F0;
+    text-shadow: 2px 2px 4px #465354;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+.banner-button {
+    font-size: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: 0.2rem solid #EFF9F0;
+    color: #EFF9F0;
+    text-shadow: 2px 2px 4px #465354;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.banner-button:hover {
+    cursor: pointer;
+    background-color: #EFF9F0;
+    color: #465354;
+    text-shadow: none;
+}
